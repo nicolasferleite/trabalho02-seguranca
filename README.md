@@ -15,7 +15,7 @@ Isso criará a pasta certs/ com os arquivos server.key e server.crt. O cliente u
 ## 3. Como Rodar a Aplicação
 Siga a ordem abaixo rigorosamente. Abra um novo terminal para cada comando e certifique-se de estar na pasta raiz (secure-messaging).
 
-Passo 1: Iniciar o Servidor
+### Passo 1: Iniciar o Servidor
 No primeiro terminal, configure o ambiente e inicie o servidor:
 
 $env:PYTHONPATH = "src"
@@ -24,7 +24,7 @@ python src/server/main.py
 
 Resultado esperado: O terminal exibirá: 🚀 SERVIDOR ATIVO em 127.0.0.1:8888.
 
-Passo 2: Iniciar Cliente Alice
+### Passo 2: Iniciar Cliente Alice
 No segundo terminal, abra a conexão para a Alice:
 
 $env:PYTHONPATH = "src"
@@ -33,7 +33,7 @@ python src/client/main.py Alice
 
 Resultado esperado: O terminal exibirá: 🔌 Conectado ao servidor e ✅ Servidor autenticado!.
 
-Passo 3: Iniciar Cliente Bob
+### Passo 3: Iniciar Cliente Bob
 No terceiro terminal, abra a conexão para o Bob:
 
 $env:PYTHONPATH = "src"

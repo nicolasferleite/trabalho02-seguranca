@@ -4,23 +4,14 @@ Este guia descreve os passos necessários para configurar e rodar a aplicação 
 📂 Estrutura de Pastas Esperada
 Certifique-se de que seus arquivos estão organizados desta forma:
 
-Plaintext
 secure-messaging/
-├── certs/                 # Pasta para os certificados RSA
+├── certs/                 # Certificados e chaves RSA (Gerados localmente)
 ├── src/
-│   ├── client/
-│   │   └── main.py        # Código do Cliente
-│   ├── server/
-│   │   └── main.py        # Código do Servidor
-│   ├── common/
-│   │   ├── crypto_utils.py # Lógica de criptografia (AES, ECDH, HKDF)
-│   │   └── protocol.py     # Definição do frame de dados
-├── gerar_certificados.py   # Script para criar server.key e server.crt
-
-
-
-
-
+│   ├── client/            # Lógica do usuário final
+│   ├── server/            # Gerenciamento de sessões e roteamento
+│   └── common/            # Protocolo e utilitários criptográficos
+├── gerar_certificados.py   # Script de inicialização de credenciais
+└── requirements.txt        # Dependências do Python
 
 🛠️ 1. Instalação das Dependências
 O projeto utiliza a biblioteca cryptography. Instale-a via terminal:

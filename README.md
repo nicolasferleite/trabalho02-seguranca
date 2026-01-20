@@ -9,6 +9,7 @@ pip install cryptography
 O servidor precisa de um par de chaves RSA para assinar o handshake. Rode o script de geração na raiz do projeto:
 
 python gerar_certificados.py
+
 Isso criará a pasta certs/ com os arquivos server.key e server.crt. O cliente usará o .crt para validar a identidade do servidor.
 
 ## 3. Como Rodar a Aplicação
@@ -18,21 +19,27 @@ Passo 1: Iniciar o Servidor
 No primeiro terminal, configure o ambiente e inicie o servidor:
 
 $env:PYTHONPATH = "src"
+
 python src/server/main.py
+
 Resultado esperado: O terminal exibirá: 🚀 SERVIDOR ATIVO em 127.0.0.1:8888.
 
 Passo 2: Iniciar Cliente Alice
 No segundo terminal, abra a conexão para a Alice:
 
 $env:PYTHONPATH = "src"
+
 python src/client/main.py Alice
+
 Resultado esperado: O terminal exibirá: 🔌 Conectado ao servidor e ✅ Servidor autenticado!.
 
 Passo 3: Iniciar Cliente Bob
 No terceiro terminal, abra a conexão para o Bob:
 
 $env:PYTHONPATH = "src"
+
 python src/client/main.py Bob
+
 ## 4. Como Trocar Mensagens
 Com todos os terminais abertos:
 

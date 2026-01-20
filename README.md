@@ -1,19 +1,7 @@
 🛡️ Secure Messaging App - Guia de Execução
 Este guia descreve os passos necessários para configurar e rodar a aplicação de chat seguro com criptografia de ponta a ponta em ambiente Windows (PowerShell).
 
-📂 Estrutura de Pastas Esperada
-Certifique-se de que seus arquivos estão organizados desta forma:
-
-secure-messaging/
-├── certs/                 # Certificados e chaves RSA (Gerados localmente)
-├── src/
-│   ├── client/            # Lógica do usuário final
-│   ├── server/            # Gerenciamento de sessões e roteamento
-│   └── common/            # Protocolo e utilitários criptográficos
-├── gerar_certificados.py   # Script de inicialização de credenciais
-└── requirements.txt        # Dependências do Python
-
-🛠️ 1. Instalação das Dependências
+# 🛠️ 1. Instalação das Dependências 
 O projeto utiliza a biblioteca cryptography. Instale-a via terminal:
 
 PowerShell

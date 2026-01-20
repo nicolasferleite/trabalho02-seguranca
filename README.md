@@ -1,19 +1,19 @@
-# 🛡️ Secure Messaging App - Guia de Execução
+# Secure Messaging App - Guia de Execução
 Este guia descreve os passos necessários para configurar e rodar a aplicação de chat seguro com criptografia de ponta a ponta em ambiente Windows (PowerShell).
 
-## 🛠️ 1. Instalação das Dependências 
+## 1. Instalação das Dependências 
 O projeto utiliza a biblioteca cryptography. Instale-a via terminal:
 
 PowerShell
 pip install cryptography
-##🔑 2. Geração de Certificados (RSA)
+## 2. Geração de Certificados (RSA)
 O servidor precisa de um par de chaves RSA para assinar o handshake. Rode o script de geração na raiz do projeto:
 
 PowerShell
 python gerar_certificados.py
 Isso criará a pasta certs/ com os arquivos server.key e server.crt. O cliente usará o .crt para validar a identidade do servidor.
 
-##🚀 3. Como Rodar a Aplicação
+## 3. Como Rodar a Aplicação
 Siga a ordem abaixo rigorosamente. Abra um novo terminal para cada comando e certifique-se de estar na pasta raiz (secure-messaging).
 
 Passo 1: Iniciar o Servidor
@@ -38,7 +38,7 @@ No terceiro terminal, abra a conexão para o Bob:
 PowerShell
 $env:PYTHONPATH = "src"
 python src/client/main.py Bob
-##💬 4. Como Trocar Mensagens
+## 4. Como Trocar Mensagens
 Com todos os terminais abertos:
 
 No terminal da Alice:

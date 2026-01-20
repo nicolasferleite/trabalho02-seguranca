@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Segurança (Não subir chaves privadas)
+certs/server.key
+
+# Ambientes virtuais
+venv/
+.env
